@@ -1,0 +1,576 @@
+body{
+	font-family: 'Cairo', sans-serif;
+	background-image: url("../images/img10.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	color:white;
+	margin: 0px;
+}
+
+body header nav ul{
+	/*background-color: blue;*/
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+
+body header nav ul li{
+	list-style: none;
+	transition: transform 1s;
+}
+
+body header nav ul li a{
+	text-decoration: none;
+	color: white;
+	transition: color 1s;
+}
+body header nav ul li a.logo{
+	
+} 
+
+/*Header hover*/
+header nav ul li a:hover{
+	color: #00cc66;
+	text-shadow: 5px 5px 5px black;
+	/*transform: rotate(90deg);*/
+	/*font-size: 22px;*/
+} 
+header nav ul li:hover{
+	transform: rotateY(360deg);
+}
+
+body header nav ul li a.logo:hover{
+	text-shadow: 5px 5px 10px red;
+} 
+
+
+/*Index.html*/
+.index section{
+	animation-name: descri;
+	animation-duration: 2s;
+}
+.image-text-container{
+	animation-name: descri;
+	animation-duration: 2s;
+}
+.CV section{
+	animation-name: descri;
+	animation-duration: 2s;
+}
+.Contact section{
+	animation-name: descri;
+	animation-duration: 2s;
+}
+.social section{
+		animation-name: descri;
+	animation-duration: 2s;
+}
+
+
+@keyframes descri{
+
+	0%{
+		opacity: 0.1;
+		
+	}
+
+	100%{
+		opacity: 1;
+		
+	}
+}
+
+.welcome{
+	/*background-color: red;*/
+	text-align: center;
+	margin-top: 40px;
+	font-size: 50px;
+	word-spacing: 15px;
+}
+
+.description{
+	text-align: center;
+	margin-top: 5px;
+	font-size: 18px;
+}
+.description a{
+	text-decoration: none;
+	color:white;
+}
+.link{
+	border: 1px solid white;
+	padding: 0px 5px;
+	border-radius: 4px;
+	transition: background-color 1s;
+}
+.link:hover{
+	background-color: #00cc66;
+}
+
+/*About.html*/
+.About .image-text-container{
+	display: flex;
+	flex-direction: row;
+	background-color: rgba(0,0,0,0.4);
+	margin-top:	40px;
+	margin-left: 20px;
+	margin-right: 20px;
+}
+
+.About .image-text-container .image-container img{
+	width: 400px;
+	height: 400px;
+	padding-left: 40px;
+	border-radius: 20%;
+	padding-top: 20px;
+	transition: border-radius 2s;
+}
+
+.About .image-text-container .image-container img:hover{
+	/*border-radius: 100%;*/
+	/*box-shadow: 10px 8px 10px black;*/
+	border-radius: 100%;
+	/*transform: rotateY(360deg);*/
+}
+
+.About .image-text-container .text-container{
+	padding-left: 20px;
+	padding-right: 20px;
+
+}
+
+/*CV.html*/
+.CV .CV-table table, th, td{
+	border: 1px solid white;
+	/*justify-content: space-between;*/
+}
+
+.CV section{
+	margin-top: 70px;
+	display: flex;
+	flex-direction: row;
+}
+.CV .CV-table{
+	background-color: rgba(0, 0, 0, 0.4);
+	margin-right: 10px;
+	margin-left: 5px;
+	border-radius: 20px;
+}
+.CV .CV-table h1, .CV .Experience h1, .CV .Skills h1{
+	text-align: center;
+}
+.CV .Experience{
+	background-color: rgba(0, 0, 0, 0.4);
+	margin-right: 10px;
+	width: 30%;
+	height: 400px;
+	border-radius: 20px;
+}
+.CV .Skills{
+	background-color: rgba(0, 0, 0, 0.4);
+	width: 31.7%;
+	border-radius: 20px;
+}
+
+/*Contact.html*/
+.Contact section{
+	display: flex;
+	margin-top: 30px;
+	flex-direction: row;
+	margin-bottom: 10px;
+	/*margin: -7px;*/
+}
+
+.Form{
+	margin-left: 10px;
+	background-color: rgba(0, 0, 0, 0.4);
+	width: 40%;
+	padding-left: 60px;
+	border-radius: 20px;
+	box-sizing: border-box;
+}
+
+.Map{
+	width: 775px;
+	border-radius: 20px;
+	padding: 0px 73px;
+	background-color: rgba(0,0,0,0.4);
+	margin-left: 10px;
+	box-sizing: border-box;
+}
+
+input[type=text], textarea{
+	width:400px;
+	border-radius: 5px;
+}
+
+
+.footer-contact{
+	width: 100%;
+	background-color: rgba(0,0,0,0.7);
+	/*height: 86px;*/
+	/*bottom: 0px;*/
+	/*margin-top: 15px;*/
+}
+body .footer-contact ul{
+	padding: 20px 20px;  /*30px*/ /*20px*/
+	/*margin: 0px;*/
+	/*box-sizing: border-box;*/
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+body .footer-contact ul li{
+	/*padding-top: 10px;*/
+	/*box-sizing: border-box;*/
+	list-style: none;
+	/*margin: 0;*/
+}
+body .footer-contact ul li a{
+	text-decoration: none;
+	color: white;
+	transition: 1s;
+}
+body .footer-contact ul li a.fa-facebook:hover{
+	color: #3B5998;
+}
+body .footer-contact ul li a.fa-twitter:hover{
+	color: #55ACEE;
+} 
+body .footer-contact ul li a.fa-google:hover{
+	color: #dd4b39;
+}
+body .footer-contact ul li a:hover{
+	transform: rotateZ(360deg);
+}
+
+/*Social*/                              /*Dont forget to give reference*/
+.social .social-container{
+	/*background-color: rgb(0,0,0,0.4);*/
+	display: flex;
+	flex-direction: row;
+	/*justify-content: space-between;*/
+	margin-top: 120px;
+}
+/*.social section .social-container{
+
+}*/
+.social-container .fa{
+  padding: 70px;
+  padding-top: 85px;
+  font-size: 90px;
+  /*box-sizing: border-box;*/
+  width: 120px;
+  height: 120px;
+  text-align: center;
+  text-decoration: none;
+  /*margin: 5px 2px;*/
+  margin: 5px 0px;
+  border-radius: 100%;
+  /*line-height: 120;*/
+  /*margin-right: 60px;*/
+}
+.fb .fa-facebook {
+  background: #3B5998;
+  color: white;
+  margin-right: 105px;
+  transition: background-color 1s;
+}
+.twitter .fa-twitter {
+  background: #55ACEE;
+  color: white;
+  margin-right: 105px;
+  transition: background-color 1s;
+}
+
+.google .fa-google {
+  background: #dd4b39;
+  color: white;
+  margin-right: 103px;
+  transition: background-color 1s;
+}
+
+.linkedin .fa-linkedin {
+  background: #007bb5;
+  color: white;
+  transition: background-color 1s;
+}
+
+.social-container .fb .fa-facebook:hover{
+	background-color: #000066;
+
+}
+.social-container .twitter .fa-twitter:hover{
+	background-color: #0099cc;
+}
+.social-container .google .fa-google:hover{
+	background-color: #990033;
+}
+.social-container .linkedin .fa-linkedin:hover{
+	background-color: #000099
+}
+
+.social-container .fa{
+	animation-name: every;
+	animation-duration: 4s;
+}
+
+@keyframes every{
+	0%{
+		opacity: 0.3;
+		transform: rotateY(0deg);
+		/*width: 50px;
+		height: 50px;*/
+		/*margin: 0px;*/
+	}
+	/*50%{
+		opacity: 0.6;
+		transform: rotateZ(90deg);
+	}*/
+	100%{
+		opacity: 1;
+		transform: rotateY(360deg);
+		/*width: 120px;
+		height: 120px;*/
+	}
+}
+
+/*Footer for common pages*/
+.usable{
+	/*margin-top: 20%;*/
+	/*position: absolute;*/
+	width: 100%;
+	height: 100%;
+
+	/*bottom: 0px;*/
+	background-color: rgba(0, 0, 0, 0.7);
+	/*height: 85px;*/
+	/*box-sizing: border-box;*/
+	/*margin-bottom: 0px;*/
+	/*margin-left: 0px;*/
+	/*margin-right:0px;*/	 
+	
+}
+body .usable ul{
+	padding: 15px 20px;
+	/*margin: 0px;*/
+	/*box-sizing: border-box;*/
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+body .usable ul li{  
+	list-style: none;
+	
+}
+body .usable ul li a{
+	text-decoration: none;
+	color: white;
+	transition: 1s;
+	/*position: absolute;*/
+	/*width: 11px;
+	padding: 4px 4px 4px 4px;*/
+
+}
+
+.usable ul li a.fa-facebook:hover{
+	/*width: 20px;*/
+	/*background-color: #3B5998;*/
+	color: #3B5998;
+	/*font-size: 26px;*/
+}
+
+
+.usable ul li a.fa-twitter:hover{
+	color: #55ACEE;
+
+}
+
+
+.usable ul li a.fa-google:hover{
+	color: #dd4b39;
+}	
+
+body .usable ul li a:hover{
+	transform: rotateZ(360deg);
+}
+
+.usable-index{
+	margin-top: 15.3%;    /*21.8*/
+}
+
+.usable-about{
+	margin-top: 5.2%;
+}
+.usable-cv{
+	margin-top: 5.1%;
+}
+.usable-social{
+	margin-top: 9.89%;
+	/*position: fixed;
+	top:88.5%;*/
+	/*bottom: 0px;	*/
+	/*position: fixed;*/
+	/*bottom: 0;*/
+	/*line-height: ;*/
+
+}
+
+/*models_gp*/
+body .report section{
+	background-color: rgba(0,0,0, 0.6);
+	/*margin-left: 20%*/
+	/*margin-right: 20%;*/
+	/*padding-left: 10%;*/
+}
+body .report section h1.title{
+	text-align: center;
+	margin-top: 50px;
+}
+body .report section img.cover-photo{
+	padding-left: 27%;
+}
+body .report section .caption{
+	text-align: center;
+}
+body .report section .body-report{
+	margin-left: 15%;
+	margin-right: 15%;
+}
+body .report section .body-report img.site-example1{
+
+	width: 800px;
+	height: 400px;
+}
+body .report section .body-report ol p a{
+	text-decoration: none;
+	color: white;
+}
+body .report section .body-report ol p a:hover{
+	text-decoration: underline;
+	color: cyan;
+}
+.report section .body-report img.site-example2{
+	width: 800px;
+	height: 400px;
+}
+.report section .body-report img.sketch-1, img.sketch-2{
+	width:600px;
+	height: 600px;
+}
+
+.report section .for-image-size img{
+	width: 600px;
+	height: 600px;
+}
+.report section .body-report .for-screenshot-size img{
+	width: 1000px;
+	height: 500px;
+}
+.report section .body-report .validation-images img{
+	width: 900px;
+	height: 400px;
+}
+
+
+
+/*Responsive*/
+@media only screen and (max-width: 650px) {
+	body header nav ul{
+		/*width: 100%;*/
+		display: flex;
+		flex-direction: column;
+		/*margin-left: 100px;*/
+		text-align: center;
+	}
+	body .usable{
+		/*background-color: none;*/
+		height: 100%;
+		max-width: 100%;		
+	}
+	body .usable ul{
+		display: flex;
+		flex-direction: column;
+		/*position: absolute;*/
+		/*bottom: 50px;*/
+		text-align: center;
+	}
+	.About .image-text-container{
+		display: flex;
+		flex-direction: column;
+	}
+	.About .image-container img{
+		max-width: 90%;
+		margin-left: -7%;
+	}
+	.About .image-container{
+		/*padding-left: -1%;*/
+	}
+
+	.CV section{
+		display: flex;
+		flex-direction: column;
+	}
+	.CV section .CV-table{
+		 /*max-width: 80%;*/
+		 /*padding-right: -100px;*/
+	}
+	.CV section .CV-table table{
+		/*max-width: 80%;*/
+		/*width: 10%;*/
+		/*font-size: 14px;*/
+		/*margin-right: 20%;*/
+	}
+	/*.CV section .CV-table table tr{
+		max-width: 60%;
+	}*/
+
+	.CV .Experience{
+		/*max-width: 100%;*/
+		width: 100%;
+	}
+	.CV .Skills{
+		width: 100%;
+	}
+	/*.CV .usable-cv{
+		width: 100%;
+	}*/
+	.social .social-container{
+		display: flex;
+		flex-direction: column;
+		margin-left: 23%;
+		margin-top: -3%;
+	}
+	.Contact section{
+		display: flex;
+		flex-direction: column;
+	}
+	.Contact section .Form{
+		width: 100%;
+		/*padding-right: -10%;*/
+		padding-left: 0px;
+	}
+	.Contact section .Form form{
+		width: 60%;
+	}
+	.Contact section .Map{
+		width: 100%;
+	}
+	 .Map iframe{
+		width: 100%;
+		/*padding-left: 0px;*/
+		/*padding-right: 0px;*/
+	}
+
+
+
+
+
+/*	body .Contact .footer-contact ul{
+		display: flex;
+		flex-direction: column;
+	}*/
+
+} 
+
+
